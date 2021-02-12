@@ -5,12 +5,12 @@ import Link from 'next/link';
 
 function Navheader() {
   return (
-    <div className='hidden sm:flex justify-evenly items-center bg-blue-600 h-24 shadow-lg'>
+    <div className='hidden sm:flex justify-evenly items-center bg-gray-50 h-24 fixed inset-x-0 shadow-lg'>
       <div>
         <h3>LinsTur</h3>
       </div>
       <div className='flex bg-gray-50 border border-gray-400 rounded-full items-center py-2 px-10 my-2 space-x-8 shadow-lg'>
-        <Link href='/resumo'>
+        <Link href='/resume'>
           <a className='w-1/5 text-center'>
             <Image
               src="/icons/relatorio.svg"
@@ -31,7 +31,7 @@ function Navheader() {
           </a>
         </Link>
 
-        <Link href='/km'>
+        <Link href='/income'>
           <a className='w-1/5 text-center'>
             <Image
               src="/icons/euro.svg"

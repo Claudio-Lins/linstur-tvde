@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 function NavFooter() {
   return (
-    <div className='sm:hidden flex justify-evenly items-center'>
+    <div className='sm:hidden flex justify-evenly items-center fixed bottom-0 w-full'>
       
       <div className='flex border border-gray-400 rounded-full items-center py-2 px-10 my-2 space-x-8'>
-        <Link href='/resumo'>
+        <Link href='/resume'>
           <a className='w-1/5 text-center'>
             <Image
               src="/icons/relatorio.svg"
@@ -29,7 +29,7 @@ function NavFooter() {
           </a>
         </Link>
 
-        <Link href='/km'>
+        <Link href='/income'>
           <a className='w-1/5 text-center'>
             <Image
               src="/icons/euro.svg"
