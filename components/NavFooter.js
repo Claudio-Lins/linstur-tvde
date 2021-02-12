@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ModalExample from "../components/Modal";
 
 
 
@@ -30,9 +29,17 @@ function NavFooter() {
           </a>
         </Link>
 
-        <a className='w-1/5'>
-          <ModalExample />
-        </a>
+        <Link href='/km'>
+          <a className='w-1/5 text-center'>
+            <Image
+              src="/icons/euro.svg"
+              alt="Cash"
+              width={30}
+              height={30}
+            />
+          </a>
+        </Link>
+
         <Link href='/combustivel'>
           <a className='w-1/5 text-center'>
             <Image
