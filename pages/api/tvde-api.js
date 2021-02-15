@@ -1,9 +1,22 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const app  = express()
+const cors = require('cors')
+
 
 require('./models/odometro')
 const Odometro = mongoose.model('Odometro')
+
+const app  = express()
+
+app.use(express.json())
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
+  res.header('Access-Control-Allow-Headers', 'X-PINGOTHER, Content-Type, Authorization');
+  app.use(cors());
+  next();
+})
 
 mongoose.connect('mongodb+srv://clins:linstur-db@cluster0.zwsrt.mongodb.net/linstur', {
   useNewUrlParser: true,
@@ -15,10 +28,15 @@ mongoose.connect('mongodb+srv://clins:linstur-db@cluster0.zwsrt.mongodb.net/lins
 })
 
 app.get('/resume', (req, res) => {
-    return res.json({
+  Odometro.findOne({}).then((home) => {
+    return res.json(home)
+  }).catch((err) =>{
+    return res.status(400).json({
         error: false,
-        mensage: 'Info da página Resume!'
+        mensage: 'Nenhum registro inserido!'
       })
+  } )
+  
 })
 
 app.post("/resume", (req, res) => {
