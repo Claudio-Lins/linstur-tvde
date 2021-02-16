@@ -18,7 +18,7 @@ function NavFooter() {
             />
           </a>
         </Link>
-        <Link href='/km'>
+        <Link href='/OdometroIn'>
           <a className='w-1/5 text-center'>
             <Image
               src="/icons/odometer.svg"
