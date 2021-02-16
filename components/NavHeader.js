@@ -20,7 +20,7 @@ function Navheader() {
             />
           </a>
         </Link>
-        <Link href='/OdometroIn'>
+        <Link href='/odometroin'>
           <a className='w-1/5 text-center'>
             <Image
               src="/icons/odometer.svg"

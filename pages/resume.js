@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 import Data from "../components/Data-atual";
-import { data } from 'autoprefixer';
 
 const Resume = (data) => (
 <>
@@ -34,7 +33,7 @@ const Resume = (data) => (
                   <p className='font-semibold text-xs'>Km/dia</p>
                 </div>
                 <div className='bg-gray-100 p-4 rounded-md text-center'>
-                  <p className='font-semibold text-3xl'>{data.response.kmInicio}</p>
+                  <p className='font-semibold text-3xl'>000</p>
                   <p className='font-semibold text-xs'>Km/dia</p>
                 </div>
             </div>
@@ -44,10 +43,10 @@ const Resume = (data) => (
   </>  
   );
 
-  Resume.getInitialProps = async () => {
-    var response = await axios.get('http://localhost:8080/resume')
+  // Resume.getInitialProps = async () => {
+  //   var response = await axios.get('http://localhost:8080/resume')
     
-    return {response: response.data}
-  }
+  //   return {response: response.data}
+  // }
 
 export default Resume
