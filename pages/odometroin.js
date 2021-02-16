@@ -5,8 +5,9 @@ import Image from 'next/image'
 function OdometroIn() {
   return (
     <>
+   
       {/* Header Resume */}
-      <section className="bg-blue-600 text-center pt-4 mx-auto sm:bg-blue-600 fixed inset-x-0 shadow-md">
+      <div className="bg-blue-600 text-center pt-4 mx-auto sm:bg-blue-600 fixed inset-x-0 top-0 sm:top-24 shadow-md">
         <div>
           <div>
             <h1 className="text-4xl font-semibold text-gray-50">Odometro In</h1>
@@ -15,9 +16,9 @@ function OdometroIn() {
             <Data />
           </div>
         </div>
-      </section>
+      </div>
 
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center mt-48">
         <div className=' bg-blue-700 rounded-lg shadow-md border-2 w-86 p-4'>
           <div>
             <div class="flex mb-4">
@@ -60,11 +61,11 @@ function OdometroIn() {
                 id="odometroIn"
               />
               <button className='bg-blue-700 rounded-sm px-2 py-2 text-white  hover:opacity-50'>Enviar</button>
-            </div>
-
+            </div> 
           </div>
         </div>
       </div>
+      
     </>
   )
 
