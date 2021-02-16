@@ -12,7 +12,7 @@ export default function Layout({ children, title = "LinsTur - TVDE" }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
           <NavHeader />
-        <main className='sm:py-24'>{children}</main>
+        {children}
           <NavFooter />
       </div>
     </>

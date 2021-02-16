@@ -18,7 +18,7 @@ function OdometroIn() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-48">
+      <div className="flex justify-center items-center mt-48 sm:mt-80">
         <div className=' bg-blue-700 rounded-lg shadow-md border-2 w-86 p-4'>
           <div>
             <div class="flex mb-4">

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function Navheader() {
   return (
-    <div className='hidden sm:flex justify-evenly items-center bg-gray-50 h-24 fixed inset-x-0 shadow-lg'>
+    <div className='hidden sm:flex justify-evenly items-center bg-gray-50 h-24 top-0 fixed inset-x-0 shadow-lg'>
       <div>
         <h3>LinsTur</h3>
       </div>
