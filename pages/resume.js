@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Data from "../components/Data-atual";
+import { response } from 'express';
 
 const Resume = (data) => (
 <>
@@ -29,7 +30,7 @@ const Resume = (data) => (
                   <p className='font-semibold text-xs'>Km/dia</p>
                 </div>
                 <div className='bg-gray-100 p-4 rounded-md text-center'>
-                  <p className='font-semibold text-3xl'>200</p>
+                  <p className='font-semibold text-3xl'>111</p>
                   <p className='font-semibold text-xs'>Km/dia</p>
                 </div>
                 <div className='bg-gray-100 p-4 rounded-md text-center'>
@@ -48,5 +49,6 @@ const Resume = (data) => (
     
   //   return {response: response.data}
   // }
+
 
 export default Resume

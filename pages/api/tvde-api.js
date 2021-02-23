@@ -6,6 +6,9 @@ const cors = require('cors')
 require('./models/odometro')
 const Odometro = mongoose.model('Odometro')
 
+require('./models/income')
+const Income = mongoose.model('Income')
+
 const app  = express()
 
 app.use(express.json())
@@ -51,6 +54,31 @@ app.post("/resume", (req, res) => {
       mensage: 'Conteudo da página Resume cadastrado com Sucesso!'
     })
   })
+  
+  app.get('/income', (req, res) => {
+    Income.findOne({}).then((home) => {
+      return res.json(home)
+    }).catch((err) =>{
+      return res.status(400).json({
+          error: false,
+          mensage: 'Nenhum registro inserido!'
+        })
+    } )
+    
+  })
+  
+  app.post("/income", (req, res) => {
+      Income.create(req.body, (err) => {
+        if(err) return res.status(400).json({
+          error:true,
+          mensage: 'Erro: Conteudo da página Income não cadastrado com Sucesso!'
+        })
+      })
+      return res.json({
+        error: false,
+        mensage: 'Conteudo da página Income cadastrado com Sucesso!'
+      })
+    })
   
 
 app.listen(8080, () => {
