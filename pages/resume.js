@@ -1,51 +1,64 @@
+import Image from "next/image";
 import Data from "../components/Data-atual";
 
-export default function Resume() {
+export default function Colect() {
   return (
-    <div className="justify-center items-center h-screen bg-red-400">
-      <div className="container">
-        <div className='bg-blue-600'>
-          <h1>Resume</h1>
-
+    <>
+      <div className="sm:mt-24 min-h-screen">
+        {/*  */}
+        <div className="bg-blue-600 text-center py-6 sm:bg-blue-600 shadow-md">
+          <h1 className="text-4xl font-thin tracking-wider text-gray-50">
+            Resumo
+          </h1>
+          <div className="inline-flex mt-4">
+            <Data />
+          </div>
         </div>
+        {/*  */}
+        {/*  */}
+        <div className="text-center bg-blue-100 w-2/4 mx-auto sm:w-1/6 py-6 rounded-lg shadow-md mt-4 mb-8 space-y-2">
+          <p className="font-bold text-3xl sm:text-5xl">€100</p>
+          <p className="font-semibold text-xs">Total/dia</p>
+        </div>
+        {/*  */}
+        {/*  */}
+        <div className='flex mt-4 space-x-4 justify-center'>
+        <div className="sm:px-2 sm:py-6 p-4 rounded-md text-center shadow-md border sm:w-1/6">
+          <p className="font-semibold text-2xl">200</p>
+          <p className="font-semibold text-xs">Km/dia</p>
+        </div>
+        {/*  */}
+        <div className="sm:px-2 sm:py-6 p-4 rounded-md text-center shadow-md border sm:w-1/6">
+          <p className="font-semibold text-2xl">300</p>
+          <p className="font-semibold text-xs">M€dia</p>
+        </div>
+        {/*  */}
+        <div className="sm:px-2 sm:py-6 p-4 rounded-md text-center shadow-md border sm:w-1/6">
+          <p className="font-semibold text-2xl">400</p>
+          <p className="font-semibold text-xs">Km/dia</p>
+        </div>
+        </div>
+        {/*  */}
+        {/*  */}
+        <div className='flex mt-4 space-x-4 justify-center'>
+        <div className="sm:px-2 sm:py-6 p-4 rounded-md text-center shadow-md border sm:w-1/6">
+          <p className="font-semibold text-2xl">200</p>
+          <p className="font-semibold text-xs">Km/dia</p>
+        </div>
+        {/*  */}
+        <div className="sm:px-2 sm:py-6 p-4 rounded-md text-center shadow-md border sm:w-1/6">
+          <p className="font-semibold text-2xl">300</p>
+          <p className="font-semibold text-xs">M€dia</p>
+        </div>
+        {/*  */}
+        <div className="sm:px-2 sm:py-6 p-4 rounded-md text-center shadow-md border sm:w-1/6">
+          <p className="font-semibold text-2xl">400</p>
+          <p className="font-semibold text-xs">Km/dia</p>
+        </div>
+        </div>
+        {/*  */}
+        
       </div>
-    </div>
+    </>
   );
 }
-
-/* <div className="bg-blue-600 text-center mx-auto sm:bg-blue-600 shadow-md">
-    <div>
-    <h1 className="text-4xl font-thin tracking-wider text-gray-50">Resumo</h1>
-    </div>
-    <div className="text-center inline-flex py-4">
-    <Data />
-    </div>
-    </div>
-    
-    <div className="">
-    <div className="text-center p-4 rounded-lg shadow-md mb-2 ">
-    <p className='font-bold text-5xl'>€200</p>
-    <p className='font-semibold text-xs'>Total/dia</p>
-    </div>
-    <div>
-    <div className="flex space-x-2">
-    <div className='bg-gray-100 p-4 rounded-md text-center'>
-    <p className='font-semibold text-3xl'>200</p>
-    <p className='font-semibold text-xs'>Km/dia</p>
-    </div>
-    <div className='bg-gray-100 p-4 rounded-md text-center'>
-    <p className='font-semibold text-3xl'>111</p>
-    <p className='font-semibold text-xs'>Km/dia</p>
-    </div>
-    <div className='bg-gray-100 p-4 rounded-md text-center'>
-    <p className='font-semibold text-3xl'>000</p>
-    <p className='font-semibold text-xs'>Km/dia</p>
-    </div>
-    </div>
-    </div>
-    </div> */
-// Resume.getInitialProps = async () => {
-//   var response = await axios.get('http://localhost:8080/resume')
-
-//   return {response: response.data}
-// }
