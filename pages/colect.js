@@ -4,7 +4,7 @@ import Data from "../components/Data-atual";
 export default function Colect() {
   return (
     <div className="flex bg-blue-600 mx-auto justify-center sm:items-center h-screen">
-      <div className="w-4/6 sm:w-1/6">
+      <div className="w-4/6 sm:w-2/6">
         <div className="flex justify-center mt-12 mb-1">
           <Data />
         </div>
