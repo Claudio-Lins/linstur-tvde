@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function NavFooter() {
   return (
-    <div className='sm:hidden flex justify-evenly items-center fixed bottom-0 w-full'>
+    <div className='sm:hidden flex bg-gray-50 justify-evenly items-center fixed bottom-0 w-full'>
       
       <div className='flex border border-gray-400 rounded-full items-center py-2 px-10 my-2 space-x-8'>
         <Link href='/resume'>
