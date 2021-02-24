@@ -29,7 +29,7 @@ function NavFooter() {
           </a>
         </Link>
 
-        <Link href='/colec'>
+        <Link href='/colect'>
           <a className='w-1/5 text-center'>
             <Image
               src="/icons/euro.svg"
