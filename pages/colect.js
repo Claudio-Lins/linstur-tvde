@@ -114,7 +114,7 @@ export default function Colect() {
             </p>
           </div>
         </div>
-        <button className="py-1 px-3 w-full mt-4 bg-gray-50 rounded-md text-blue-600 hover:shadow-md hover:bg-blue-800">
+        <button className="py-3 px-3 w-full mt-4 bg-gray-50 rounded-md text-blue-600 hover:shadow-md hover:bg-blue-800">
           €nviar
         </button>
       </div>
