@@ -1,9 +1,7 @@
-import NavFooter from "../components/NavFooter";
-import NavHeader from "../components/NavHeader";
 import Head from "next/head";
 
 
-export default function Layout({ children, title = "LinsTur - TVDE" }) {
+export default function Layout({ children, title = "Rede Sem Fronteiras" }) {
   return (
     <>
       <div>
@@ -16,10 +14,8 @@ export default function Layout({ children, title = "LinsTur - TVDE" }) {
           />
         </Head>
         <header>
-          <NavHeader />
         </header>
         {children}
-        <NavFooter />
       </div>
     </>
   );
